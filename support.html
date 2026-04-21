@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Marian</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --accent: #3a4f8a;
+    --border: #e8e8e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f12;
+      --surface: #1a1a1f;
+      --text: #f0f0f0;
+      --text-muted: #9a9a9a;
+      --accent: #8aa1d8;
+      --border: #2a2a30;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .back {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .back:hover { text-decoration: underline; }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 24px 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 17px;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 36px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 6px;
+  }
+  p, li { font-size: 16px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin: 24px 0 36px;
+    text-align: center;
+  }
+  .contact-card a.email {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .contact-card a.email:hover { text-decoration: underline; }
+  details {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0;
+    margin: 12px 0;
+  }
+  summary {
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    list-style: none;
+    user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    float: right;
+    color: var(--text-muted);
+    font-size: 20px;
+    line-height: 1;
+  }
+  details[open] summary::after { content: "−"; }
+  details > p,
+  details > ul { padding: 0 20px 16px; margin: 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="back" href="index.html">← Back to Marian</a>
+
+<h1>Support</h1>
+<p class="subtitle">We're here to help. Most questions are answered below.</p>
+
+<div class="contact-card">
+  <p style="margin: 0; color: var(--text-muted);">Need help? Email us:</p>
+  <a class="email" href="mailto:support@marianapp.example">support@marianapp.example</a>
+  <p style="margin: 12px 0 0; font-size: 13px; color: var(--text-muted);">We reply within 2–3 business days.</p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+  <summary>How do I restore my Patron purchase on a new device?</summary>
+  <p>Open <strong>Settings</strong> in Marian, scroll to <strong>Marian Patron</strong>, and tap <strong>Restore Purchases</strong>. Make sure you are signed into the same Apple ID that made the original purchase.</p>
+</details>
+
+<details>
+  <summary>How do I cancel my monthly subscription?</summary>
+  <p>Subscriptions are managed by Apple. Open the iOS <strong>Settings</strong> app → tap your name at the top → <strong>Subscriptions</strong> → select <strong>Marian Patron</strong> → <strong>Cancel Subscription</strong>.</p>
+  <p>You can also tap <strong>Manage Subscription</strong> in the Marian app's Settings (visible after subscribing).</p>
+</details>
+
+<details>
+  <summary>I purchased Patron but premium features are still locked.</summary>
+  <p>Try these steps in order:</p>
+  <ul>
+    <li>Open <strong>Settings → Marian Patron → Restore Purchases</strong></li>
+    <li>Make sure you are signed into the correct Apple ID</li>
+    <li>Force-close the app and reopen it</li>
+    <li>If still locked after 5 minutes, restart your device</li>
+    <li>If the issue persists, email us with your purchase receipt</li>
+  </ul>
+</details>
+
+<details>
+  <summary>How do I add the home screen widget?</summary>
+  <p>Long-press an empty area of your home screen → tap the <strong>+</strong> in the top-left → search for <strong>Marian</strong> → choose the Weekly or Monthly streak widget → tap <strong>Add Widget</strong>.</p>
+  <p>Widgets are a Marian Patron feature. Free users will see a "Marian Patron" placeholder.</p>
+</details>
+
+<details>
+  <summary>My streak isn't updating correctly.</summary>
+  <p>Streaks update when you complete a full Rosary or Divine Mercy Chaplet. Make sure you tap through to the final prayer step.</p>
+  <p>Patrons can manually mark a day as completed in the expanded calendar (tap the calendar on the home screen, then tap a day to toggle).</p>
+</details>
+
+<details>
+  <summary>Can I pray in a different language?</summary>
+  <p>Yes! Open <strong>Settings → Language</strong> and choose from 21 supported languages including English, Spanish, Portuguese, Italian, French, German, Polish, Latin, Tagalog, and more.</p>
+</details>
+
+<details>
+  <summary>Why am I seeing ads?</summary>
+  <p>Marian is free to use, supported by occasional banner ads. Ads only appear on the home screen and never during prayer. To remove ads permanently, tap <strong>Settings → Become a Patron</strong> and choose either the one-time purchase or monthly subscription.</p>
+</details>
+
+<details>
+  <summary>Reminders aren't firing.</summary>
+  <p>Check the following:</p>
+  <ul>
+    <li>iOS Settings → Notifications → Marian → make sure <strong>Allow Notifications</strong> is on</li>
+    <li>In Marian: Settings → Reminders → make sure the toggle is on and a time is set</li>
+    <li>Make sure your device is not in Focus or Do Not Disturb mode at the reminder time</li>
+    <li>Reminders are a Marian Patron feature</li>
+  </ul>
+</details>
+
+<details>
+  <summary>How do I change the theme?</summary>
+  <p>Open <strong>Settings → Appearance</strong> and tap any theme card. Free users have access to the Default and Default Dark themes. Patrons unlock 10 saint-inspired themes.</p>
+</details>
+
+<details>
+  <summary>Does Marian collect my data?</summary>
+  <p>No. All your prayer history, streaks, and settings are stored only on your device and never sent to us. The only third-party service used is Google AdMob (for free users). See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+</details>
+
+<details>
+  <summary>Will Marian work without an internet connection?</summary>
+  <p>Yes — once installed, all prayer functions work fully offline. An internet connection is only required to load ads (free users) or to make a Patron purchase.</p>
+</details>
+
+<h2>Still need help?</h2>
+<p>Email us at <a href="mailto:support@marianapp.example">support@marianapp.example</a> with the following information so we can help quickly:</p>
+<ul>
+  <li>Your iOS version (Settings → General → About)</li>
+  <li>Your iPhone or iPad model</li>
+  <li>The Marian version (Settings → About → Version)</li>
+  <li>A clear description of the problem and steps to reproduce</li>
+  <li>Screenshots if applicable</li>
+</ul>
+
+<h2>Useful Links</h2>
+<ul>
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple Standard EULA)</a></li>
+  <li><a href="https://apps.apple.com/account/subscriptions">Manage Subscriptions in iOS</a></li>
+  <li><a href="index.html">Back to Home</a></li>
+</ul>
+
+<p style="color: var(--text-muted); font-size: 14px; margin-top: 60px; text-align: center;">© 2026 Daniel Szojka. Marian is an independent app and is not affiliated with the Holy See, the Catholic Church, or any official Catholic organization.</p>
+
+</div>
+</body>
+</html>
