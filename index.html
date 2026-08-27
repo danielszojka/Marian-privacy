@@ -54,12 +54,18 @@
     align-items: center;
     justify-content: center;
     width: 96px; height: 96px;
-    background: var(--accent);
-    color: white;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 22px;
-    font-size: 48px;
     margin-bottom: 24px;
-    box-shadow: 0 8px 24px rgba(58, 79, 138, 0.25);
+    box-shadow: 0 8px 24px rgba(58, 79, 138, 0.12);
+    overflow: hidden;
+  }
+  .icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   h1 {
     font-size: 48px;
@@ -158,7 +164,9 @@
 
 <header>
   <div class="container">
-    <div class="icon-wrap">✝</div>
+    <div class="icon-wrap">
+      <img src="MarianAppIcon.png" alt="Marian app logo">
+    </div>
     <h1>Marian</h1>
     <p class="tagline">The Rosary &amp; Divine Mercy App</p>
     <a class="cta" href="#download">Coming Soon to the App Store</a>
