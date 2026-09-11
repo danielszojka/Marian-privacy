@@ -3,106 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Support — Marian</title>
+
+<meta
+  name="description"
+  content="Support and frequently asked questions for Marian, a Catholic prayer app for the Holy Rosary, Divine Mercy Chaplet, and Holy Wounds Chaplet."
+>
+
 <style>
   :root {
-    --bg: #fafafa;
+    --bg: #f2efe9;
     --surface: #ffffff;
-    --text: #1a1a1a;
-    --text-muted: #6b6b6b;
-    --accent: #3a4f8a;
-    --border: #e8e8e8;
+    --text: #171717;
+    --text-muted: #707070;
+    --accent: #171717;
+    --border: #dedbd5;
+    --radius: 14px;
   }
+
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0f0f12;
-      --surface: #1a1a1f;
-      --text: #f0f0f0;
-      --text-muted: #9a9a9a;
-      --accent: #8aa1d8;
-      --border: #2a2a30;
+      --bg: #111111;
+      --surface: #1b1b1b;
+      --text: #f5f3ee;
+      --text-muted: #a8a8a8;
+      --accent: #f5f3ee;
+      --border: #303030;
     }
   }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "SF Pro Text",
+      "Helvetica Neue",
+      sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
+
   .container {
     max-width: 760px;
     margin: 0 auto;
     padding: 60px 24px 80px;
   }
+
   .back {
-    color: var(--accent);
+    color: var(--text);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
   }
-  .back:hover { text-decoration: underline; }
+
+  .back:hover {
+    text-decoration: underline;
+  }
+
   h1 {
     font-size: 36px;
     font-weight: 700;
     margin: 24px 0 8px;
     letter-spacing: -0.02em;
   }
+
   .subtitle {
     color: var(--text-muted);
     font-size: 17px;
     margin: 0 0 40px;
   }
+
   h2 {
     font-size: 22px;
     font-weight: 600;
-    margin: 36px 0 12px;
+    margin: 40px 0 14px;
     letter-spacing: -0.01em;
   }
-  h3 {
-    font-size: 17px;
-    font-weight: 600;
-    margin: 20px 0 6px;
+
+  p,
+  li {
+    font-size: 16px;
   }
-  p, li { font-size: 16px; }
-  a { color: var(--accent); }
-  ul { padding-left: 22px; }
-  li { margin: 6px 0; }
+
+  a {
+    color: var(--text);
+  }
+
+  ul {
+    padding-left: 22px;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
   .contact-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 24px;
-    margin: 24px 0 36px;
+    border-radius: var(--radius);
+    padding: 26px;
+    margin: 24px 0 40px;
     text-align: center;
   }
+
   .contact-card a.email {
     display: inline-block;
     margin-top: 8px;
     font-size: 18px;
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text);
     text-decoration: none;
   }
-  .contact-card a.email:hover { text-decoration: underline; }
+
+  .contact-card a.email:hover {
+    text-decoration: underline;
+  }
+
   details {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 0;
     margin: 12px 0;
+    overflow: hidden;
   }
+
   summary {
-    padding: 16px 20px;
+    padding: 17px 20px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     list-style: none;
     user-select: none;
   }
-  summary::-webkit-details-marker { display: none; }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
   summary::after {
     content: "+";
     float: right;
@@ -110,112 +157,418 @@
     font-size: 20px;
     line-height: 1;
   }
-  details[open] summary::after { content: "−"; }
+
+  details[open] summary::after {
+    content: "−";
+  }
+
   details > p,
-  details > ul { padding: 0 20px 16px; margin: 0; }
+  details > ul {
+    padding: 0 20px 18px;
+    margin: 0;
+  }
+
+  details > p + p {
+    padding-top: 0;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
 <a class="back" href="index.html">← Back to Marian</a>
 
 <h1>Support</h1>
-<p class="subtitle">We're here to help. Most questions are answered below.</p>
+
+<p class="subtitle">
+  Need help with Marian? Most common questions are answered below.
+</p>
 
 <div class="contact-card">
-  <p style="margin: 0; color: var(--text-muted);">Need help? Email us:</p>
-  <a class="email" href="mailto:daniel.szojka@gmail.com">daniel.szojka@gmail.com</a>
-  <p style="margin: 12px 0 0; font-size: 13px; color: var(--text-muted);">We reply within 2–3 business days.</p>
+  <p style="margin: 0; color: var(--text-muted);">
+    Still need help? Email:
+  </p>
+
+  <a
+    class="email"
+    href="mailto:daniel.szojka@gmail.com"
+  >
+    daniel.szojka@gmail.com
+  </a>
+
+  <p style="margin: 12px 0 0; font-size: 13px; color: var(--text-muted);">
+    We aim to respond within 2–3 business days.
+  </p>
 </div>
 
 <h2>Frequently Asked Questions</h2>
 
 <details>
-  <summary>How do I restore my Patron purchase on a new device?</summary>
-  <p>Open <strong>Settings</strong> in Marian, scroll to <strong>Marian Patron</strong>, and tap <strong>Restore Purchases</strong>. Make sure you are signed into the same Apple ID that made the purchase.</p>
+  <summary>What can I use for free?</summary>
+
+  <p>
+    The complete prayer experience is available for free.
+  </p>
+
+  <p>
+    Free users can pray the Holy Rosary, Divine Mercy Chaplet,
+    and Holy Wounds Chaplet with full prayer texts, visual bead
+    guidance, Mystery suggestions, Spiritual Fruits, prayer progress,
+    haptic feedback, multiple languages, and basic streak tracking.
+  </p>
+
+  <p>
+    Marian is also fully offline and contains no advertising.
+  </p>
 </details>
 
 <details>
-  <summary>How do I view my purchase receipt?</summary>
-  <p>Purchases are managed by Apple. Open the iOS <strong>Settings</strong> app → tap your name at the top → <strong>Purchase History</strong> to view your Marian purchase receipt.</p>
-  <p>You can also tap <strong>View Purchase</strong> in the Marian app's Settings if available.</p>
-</details>
+  <summary>What is Marian Patron?</summary>
 
-<details>
-  <summary>I purchased Patron but premium features are still locked.</summary>
-  <p>Try these steps in order:</p>
+  <p>
+    Marian Patron unlocks optional features designed to help you
+    personalize Marian and build a consistent prayer habit.
+  </p>
+
   <ul>
-    <li>Open <strong>Settings → Marian Patron → Restore Purchases</strong></li>
-    <li>Make sure you are signed into the correct Apple ID</li>
-    <li>Force-close the app and reopen it</li>
-    <li>If still locked after 5 minutes, restart your device</li>
-    <li>If the issue persists, email us with your purchase receipt</li>
+    <li>Prayer reminders</li>
+    <li>Prayer intentions and intention tracking</li>
+    <li>Prayer statistics and history</li>
+    <li>10 saint-inspired light and dark themes</li>
+    <li>Home Screen widgets</li>
+    <li>Adjustable prayer text size</li>
   </ul>
+
+  <p>
+    Marian Patron is available through either a recurring
+    3-month subscription or a one-time lifetime purchase.
+  </p>
 </details>
 
 <details>
-  <summary>How do I add the home screen widget?</summary>
-  <p>Long-press an empty area of your home screen → tap the <strong>+</strong> in the top-left → search for <strong>Marian</strong> → choose the Weekly or Monthly streak widget → tap <strong>Add Widget</strong>.</p>
-  <p>Widgets are a Marian Patron feature.</p>
+  <summary>How do I restore my Marian Patron purchase?</summary>
+
+  <p>
+    Open <strong>Settings</strong> in Marian, go to
+    <strong>Marian Patron</strong>, and tap
+    <strong>Restore Purchases</strong>.
+  </p>
+
+  <p>
+    Make sure your device is signed in to the same Apple Account
+    that was used for the original purchase.
+  </p>
 </details>
 
 <details>
-  <summary>My streak isn't updating correctly.</summary>
-  <p>Streaks update when you complete a full Rosary or Divine Mercy Chaplet. Make sure you tap through to the final prayer step.</p>
-  <p>Patrons can manually mark a day as completed in the expanded calendar (tap the calendar on the home screen, then tap a day to toggle).</p>
+  <summary>I purchased Patron, but features are still locked.</summary>
+
+  <p>Try these steps:</p>
+
+  <ul>
+    <li>
+      Open <strong>Settings → Marian Patron → Restore Purchases</strong>
+    </li>
+    <li>
+      Confirm that you are signed in to the correct Apple Account
+    </li>
+    <li>
+      Make sure your device has an internet connection while restoring
+    </li>
+    <li>
+      Close Marian and reopen it
+    </li>
+    <li>
+      Restart your device if the purchase still does not appear
+    </li>
+  </ul>
+
+  <p>
+    If Patron is still unavailable, contact support and describe
+    what happens when you attempt to restore your purchase.
+  </p>
+</details>
+
+<details>
+  <summary>How do I manage or cancel my subscription?</summary>
+
+  <p>
+    Marian Patron subscriptions are managed by Apple.
+  </p>
+
+  <p>
+    On your iPhone, open <strong>Settings</strong>, tap your name,
+    then tap <strong>Subscriptions</strong>. Select Marian to view
+    or manage your subscription.
+  </p>
+
+  <p>
+    A lifetime Marian Patron purchase does not renew and does not
+    need to be cancelled.
+  </p>
+</details>
+
+<details>
+  <summary>How do I view my purchase history?</summary>
+
+  <p>
+    Marian purchases are processed by Apple.
+  </p>
+
+  <p>
+    Open the iOS <strong>Settings</strong> app, tap your name,
+    then open your Apple Account purchase history to review
+    transactions associated with Marian.
+  </p>
+</details>
+
+<details>
+  <summary>How do I add a Marian Home Screen widget?</summary>
+
+  <p>
+    Touch and hold an empty area of your Home Screen until the apps
+    begin to move. Tap the option to add a widget, search for
+    <strong>Marian</strong>, select a Marian widget, and add it to
+    your Home Screen.
+  </p>
+
+  <p>
+    Marian widgets are a Marian Patron feature.
+  </p>
+</details>
+
+<details>
+  <summary>How does prayer streak tracking work?</summary>
+
+  <p>
+    Marian records a prayer completion when you finish a devotion
+    through its final prayer step.
+  </p>
+
+  <p>
+    Free users can see their basic streak after completing a prayer.
+    Marian Patron includes additional prayer history, statistics,
+    and streak information.
+  </p>
+</details>
+
+<details>
+  <summary>How do I use prayer intentions?</summary>
+
+  <p>
+    Prayer intentions are available with Marian Patron.
+  </p>
+
+  <p>
+    You can set an intention before beginning a prayer. Marian can
+    then display that intention during your prayer to help you keep
+    it in mind.
+  </p>
+
+  <p>
+    Your prayer intentions are stored locally on your device and
+    are not sent to Marian servers.
+  </p>
+</details>
+
+<details>
+  <summary>How do I view my prayer statistics?</summary>
+
+  <p>
+    Prayer statistics are available with Marian Patron.
+  </p>
+
+  <p>
+    Open Marian's statistics view to see prayer history and streak
+    information for the Holy Rosary, Divine Mercy Chaplet, and
+    Holy Wounds Chaplet.
+  </p>
+</details>
+
+<details>
+  <summary>How do I change the app theme?</summary>
+
+  <p>
+    Open <strong>Settings</strong> and go to the theme or appearance
+    section.
+  </p>
+
+  <p>
+    The Classic light theme is available to everyone. Marian Patron
+    unlocks 10 additional saint-inspired light and dark themes.
+  </p>
+</details>
+
+<details>
+  <summary>How do I change the prayer text size?</summary>
+
+  <p>
+    Adjustable prayer text size is a Marian Patron feature.
+  </p>
+
+  <p>
+    While praying, use the supported pinch gesture to increase or
+    decrease the prayer text to a comfortable size. Marian remembers
+    your selected size while Patron access is active.
+  </p>
 </details>
 
 <details>
   <summary>Can I pray in a different language?</summary>
-  <p>Yes! Open <strong>Settings → Language</strong> and choose from 21 supported languages including English, Spanish, Portuguese, Italian, French, German, Polish, Latin, Tagalog, and more.</p>
+
+  <p>
+    Yes. Marian supports prayer texts and interface translations
+    in multiple languages.
+  </p>
+
+  <p>
+    Open <strong>Settings → Language</strong> and select the language
+    you would like to use.
+  </p>
 </details>
 
 <details>
-  <summary>Reminders aren't firing.</summary>
+  <summary>How does Marian choose the Rosary Mysteries?</summary>
+
+  <p>
+    Marian suggests the traditional Mystery set based on the day
+    of the week and can adjust its suggestion based on the liturgical
+    season and certain important feast days.
+  </p>
+
+  <p>
+    You can always choose a different Mystery set manually before
+    beginning the Rosary.
+  </p>
+</details>
+
+<details>
+  <summary>My prayer reminder did not appear.</summary>
+
+  <p>
+    Prayer reminders are available with Marian Patron for supported
+    devotions.
+  </p>
+
   <p>Check the following:</p>
+
   <ul>
-    <li>iOS Settings → Notifications → Marian → make sure <strong>Allow Notifications</strong> is on</li>
-    <li>In Marian: Settings → Reminders → make sure the toggle is on and a time is set</li>
-    <li>Make sure your device is not in Focus or Do Not Disturb mode at the reminder time</li>
-    <li>Reminders are a Marian Patron feature</li>
+    <li>
+      Open iOS <strong>Settings → Notifications → Marian</strong>
+      and make sure notifications are allowed
+    </li>
+    <li>
+      Open Marian and confirm that your reminder is enabled
+      and set for the correct time
+    </li>
+    <li>
+      Check whether a Focus mode is silencing notifications
+      at that time
+    </li>
+    <li>
+      Confirm that Marian Patron is currently active
+    </li>
   </ul>
 </details>
 
 <details>
-  <summary>How do I change the theme?</summary>
-  <p>Open <strong>Settings → Appearance</strong> and tap any theme card. Patrons unlock 10 saint-inspired themes beyond the default options.</p>
-</details>
+  <summary>Does Marian collect my prayer data?</summary>
 
-<details>
-  <summary>Does Marian collect my data?</summary>
-  <p>No. All your prayer history, streaks, and settings are stored only on your device and never sent to us. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+  <p>
+    No. Marian does not require an account and does not use
+    advertising, tracking, or third-party analytics services.
+  </p>
+
+  <p>
+    Your prayer history, streaks, statistics, intentions, and
+    preferences remain stored locally on your device.
+  </p>
+
+  <p>
+    See the <a href="privacy.html">Privacy Policy</a> for more
+    information.
+  </p>
 </details>
 
 <details>
   <summary>Will Marian work without an internet connection?</summary>
-  <p>Yes — once installed, all prayer functions work fully offline. An internet connection is only required for App Store purchase verification or to make a Patron purchase.</p>
+
+  <p>
+    Yes. Marian's prayer content and core prayer experience are
+    designed to work fully offline.
+  </p>
+
+  <p>
+    An internet connection may still be required for Apple services
+    such as purchasing or restoring Marian Patron through the
+    App Store.
+  </p>
 </details>
 
 <h2>Still need help?</h2>
-<p>Email us at <a href="mailto:daniel.szojka@gmail.com">daniel.szojka@gmail.com</a> with the following information so we can help quickly:</p>
+
+<p>
+  Email
+  <a href="mailto:daniel.szojka@gmail.com">
+    daniel.szojka@gmail.com
+  </a>
+  and include as much of the following information as possible:
+</p>
+
 <ul>
-  <li>Your iOS version (Settings → General → About)</li>
   <li>Your iPhone or iPad model</li>
-  <li>The Marian version (Settings → About → Version)</li>
-  <li>A clear description of the problem and steps to reproduce</li>
-  <li>Screenshots if applicable</li>
+  <li>Your iOS or iPadOS version</li>
+  <li>Your Marian app version</li>
+  <li>A description of what happened</li>
+  <li>The steps that reproduce the issue, if known</li>
+  <li>A screenshot of the issue, if helpful</li>
 </ul>
 
 <h2>Useful Links</h2>
+
 <ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple Standard EULA)</a></li>
-  <li><a href="index.html">Back to Home</a></li>
+  <li>
+    <a href="privacy.html">Privacy Policy</a>
+  </li>
+
+  <li>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
+      Terms of Use — Apple Standard EULA
+    </a>
+  </li>
+
+  <li>
+    <a href="index.html">Marian Home</a>
+  </li>
 </ul>
 
-<p style="color: var(--text-muted); font-size: 14px; margin-top: 60px; text-align: center;">© 2026 Daniel Szojka. Marian is an independent app and is not affiliated with the Holy See, the Catholic Church, or any official Church organization.</p>
+<footer>
+  <p>© 2026 Daniel Szojka. All rights reserved.</p>
+
+  <p>
+    Marian is an independent app and is not affiliated with or
+    endorsed by the Holy See, the Catholic Church, or any official
+    Church organization.
+  </p>
+</footer>
 
 </div>
+
 </body>
 </html>
